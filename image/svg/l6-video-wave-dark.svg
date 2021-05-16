@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="93px" viewBox="0 0 1600 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Wave 2</title>
+    <g id="Lanidng-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-06" transform="translate(0.000000, -3238.000000)" fill="rgb(14, 16, 25)">
+            <g id="Features" transform="translate(-1.000000, 3238.000000)">
+                <g id="BG">
+                    <path d="M0.906438326,12.3789062 C167.474021,33.4309896 293.75,42.1627604 379.734375,38.5742188 C508.710938,33.1914063 540.832031,31.6679688 609.675781,38.5742188 C678.519531,45.4804687 1007.19141,98.15625 1160.11328,91.7695313 C1313.03516,85.3828125 1562.99609,47.734375 1621.57031,79.3242188 C1621.57031,26.4414062 1621.57031,0 1621.57031,0 L0,0 L0.906438326,12.3789062 Z" id="Wave-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

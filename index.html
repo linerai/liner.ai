@@ -1,21 +1,626 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Liner.ai</title>
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197015193-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-197015193-1');
+  </script>
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Liner.ai | Machine Learning Without Code</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+  <!-- Vendor stylesheets  -->
+<!--   <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
+ -->  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/theme-mode-custom.css">
+  <!-- Custom stylesheet -->
 </head>
-<body style="background-color: #181818">
 
-<img style="max-width: 600px ;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
- " src="logo.svg">
+<body data-theme-mode-panel-active data-theme="light">
+<div class="site-wrapper overflow-hidden">
+  <!-- Header Area -->
+  <header class="site-header site-header--menu-right dark-mode-texts site-header--absolute">
+    <div class="container pr-lg--30 pl-lg--30 mt-8">
+      <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="./">
+          <img src="image/logo2_final_white.svg" width="240px" alt="" class="light-version-logo ">
+          <img src="image/logo2_final_white.svg" width="240px" alt="" class="dark-version-logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-menu8">
+          <div class="navbar-nav-wrapper">
 
+            <ul class="navbar-nav main-menu">
+
+              <li class="nav-item">
+                <a
+                        class="nav-link rounded-10 blur-button bg-transparent shadow font-weight-normal"
+                        href="support.html"
+                        role="button"
+                        aria-expanded="false"
+                        style="padding: 12px !important;"
+                >Contact us</a>
+              </li>
+            </ul>
+
+
+          </div>
+          <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu8" aria-controls="mobile-menu8" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="gr-cross-icon"></i>
+          </button>
+        </div>
+
+
+<!--        <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">-->
+<!--          <a class="btn btn-primary gr-text-9 d-none d-xs-inline-flex " href="#join-beta">-->
+<!--            Join Beta-->
+<!--          </a>-->
+<!--        </div>-->
+
+
+
+        <!-- Mobile Menu Hamburger-->
+        <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu8" aria-controls="mobile-menu8" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+          <div class="hamburger hamburger--squeeze js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </button>
+        <!--/.Mobile Menu Hamburger Ends-->
+
+      </nav>
+    </div>
+  </header>
+  <!-- navbar-dark -->
+  <!-- Hero Area -->
+  <div class="hero-area position-relative bg-blackish-blue pt-29 pt-lg-33 pb-15 pb-lg-29" >
+    <div class="overflow-hidden" style="width: 100%; height: 100%; display: block; position:absolute; top: 0px; transform: rotateY(180deg);">
+      <video style="filter: contrast(175%) brightness(80%);" class="hero-video" playsinline autoplay muted loop>
+        <source src="image/anim-gradient.mp4" type="video/mp4" />
+        <!--      <source src="image/anim-gradient.ogv" type="video/ogv" />-->
+        <!--      <source src="image/anim-gradient.webm" type="video/webm" />-->
+      </video>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-7 col-md-9 order-lg-2 p-0">
+          <div class="hero-img">
+            <div class="hero-video-thumb position-relative gr-z-index-1">
+              <img src="image/screenshot1.svg" alt="" class="w-100 rounded-8" >
+              <!-- <a class="video-play-trigger gr-abs-center bg-white circle-xl gr-flex-all-center gr-abs-hover-y focus-reset" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" tabindex="-1"><i class="icon icon-triangle-right-17-2"></i></a> -->
+<!--              <div class="abs-shape gr-abs-tr-custom gr-z-index-n1">-->
+<!--                <img src="image/l4/png/l4-hero-shape.png" alt="" class="w-100" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">-->
+<!--              </div>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-9 order-lg-1 mt-9 mt-lg-0 p-xl-0">
+          <div class="hero-content dark-mode-texts">
+            <h1 class="gr-text-2 mb-9">Machine learning apps without code</h1>
+            <p style="color: white;" class="gr-text-7 pr-5 pl-0 pr-xl-11 mb-9">Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required.</p>
+            <div class="hero-btn">
+              <a href="#join-beta" class="btn-link with-icon text-green gr-text-7 pt-4 pb-4 pr-8 pl-8 blur-button shadow">Join Beta <i class="icon icon-tail-right font-weight-bold"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-section pt-14 pt-lg-25 bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <div class="section-title text-center mb-13 mb-lg-23">
+            <h2 class="title gr-text-3">Several project templates to chose from.</h2>
+            <br>
+            <p>Liner comes with several ready to use machine learning templates. Just select the template and add your data to start training.   </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/svg/l6-feature-icon11.svg">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Image Classification</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to classify an image into various given labels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/text-class.svg">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Text Classification</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to classify text into various given labels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/audio-class.svg">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Audio Classification</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to classify an audio clip into various given labels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/image-synth.png">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Image Synthesis</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to generate images of a given style.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/svg/l6-feature-icon2.svg">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Object Segmentation</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to detect/segment objects in an image.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-12">
+          <div class="feature-widget d-sm-flex">
+            <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
+              <img class="max-height-px-50" src="./image/ctrl.png">
+            </div>
+            <div class="content">
+              <h3 class="title gr-text-7 mb-5">Text Generation</h3>
+              <p class="gr-text-9 gr-text-color-opacity">Train a model to generate text of a given style.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="border-sm-divider dark text-center mt-lg-13"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="join-beta" class="newsltr-section bg-default-6 border-bottom dark-mode-texts bg-gradient-black shadow ml-md-10 mr-md-10 ml-xs-5 mr-xs-5 rounded-xs-12 rounded-md-25">
+    <div class="container pt-12 pb-10 pt-lg-19 pb-lg-17 ">
+      <form class="newsletter-form d-flex justify-content-lg-end" id="join-beta-form">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-5 col-lg-10 pr-lg-9 col-md-10 mb-xl-0 mb-6">
+            <div class="nwsltr-text">
+              <h2 class="title gr-text-5">We are currently in beta! Sign up to receive an invitation.</h2>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-7 col-md-10 mb-lg-0 mb-6">
+              <div class="form-group mr-7 w-100 mb-0">
+                <input type="hidden" value="join-beta" name="f">
+                <input type="email" class="form-control" id="leadEmail1" name="email" placeholder="Enter your email" >
+              </div>
+          </div>
+          <div class="cta-btn col-xl-2 col-lg-3 col-md-10 " >
+            <button  style="min-width: 150px !important;" type="submit" class="btn btn-primary with-icon gr-hover-y">Sign Up<i id="form-button-icon" class="icon icon-tail-right"></i></button>
+          </div>
+        </div>
+      </form>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3u-ezFTnxY7SSlPzpJifuGLRXWfIL2spDOMEAqZ7PsJSMwlm9WexMN1Qp4j73TZROeA/exec'
+        const form = document.forms['join-beta-form']
+        form.addEventListener('submit', e => {
+          document.getElementById('form-button-icon').classList.replace('icon-tail-right', 'spinner-border');
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                    document.getElementById('form-button-icon').classList.replace('spinner-border', 'icon-check-simple');
+                    console.log('Success!', response);
+                  })
+                  .catch(error => {
+                    document.getElementById('form-button-icon').classList.replace('spinner-border', 'icon-tail-right');
+                    console.error(error);
+                  })
+        });
+      </script>
+
+    </div>
+  </div>
+
+  <div class="content-section pt-13 pt-lg-19 pb-13 pb-lg-19 bg-default-4">
+    <div class="container w-100">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-7 order-lg-2" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+          <div class="content-img">
+            <img src="./image/liner5.png" alt="" class="w-100">
+          </div>
+        </div>
+        <div class="col-10 col-lg-3 col-xl-5 pr-xl-13 order-lg-1">
+          <div class="section-title content-text mb-13">
+            <h2 class="title gr-text-3 mb-6">Easy steps to get your AI app ready.</h2>
+            <p class="gr-text-8">Liner lets you build your machine learning app with three easy steps.</p>
+          </div>
+          <div class="content-widget">
+            <div class="row mb-n9">
+              <div class="content-widget-1 pl-lg-9">
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">1</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Label your data</h3>
+                  <p class="gr-text-9">Import your data and label it within Liner. You can also use a pre-labeled dataset. </p>
+                </div>
+              </div>
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">2</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Start training</h3>
+                  <p class="gr-text-9">With a press of a button Liner will automatically choose an appropriate model and train it.  </p>
+                </div>
+              </div>
+              <div class="media single-widget mb-7">
+                <div class="count circle-sm gr-bg-blue-opacity-1 mr-8">
+                  <span class="text-primary--light-only gr-text-9">3</span>
+                </div>
+                <div class="media-body">
+                  <h3 class="gr-text-7">Deploy your model</h3>
+                  <p class="gr-text-9">Test your trained model and export it to a variety of platforms. </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content-section bg-default-4 pt-lg-25 pt-15 pb-15 pb-lg-25">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-7 col-md-8">
+          <div class="section-title mb-13">
+            <h4 class="pre-title gr-text-12 text-red text-uppercase mb-9">Use Cases</h4>
+            <h2 class="title gr-text-4">Endless possibilities without writing a single line of code.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="about-image img-big pt-lg-13" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <img class="w-100 rounded-10" src="./image/35.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <!--           todo: remove these images in mobile -->
+          <div class="row justify-content-between align-items-center pl-lg-13">
+            <div class="col-md-6">
+              <div class="about-image img-mid mt-9 mt-lg-0" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
+                <img class="w-100 rounded-10" src="./image/36.png" alt="">
+                <div class="abs-pattern gr-abs-tr-custom" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300" data-aos-once="true">
+                  <img src="./image/l5/png/l5-about-pattern.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="about-image img-sm mt-9 mt-lg-0" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <img class="rounded-10 w-100 " src="./image/37.png" alt="">
+              </div>
+            </div>
+            <div class="col-xl-10">
+              <div class="about-content mt-12 mt-lg-23">
+                <p class="gr-text-9">Liner makes it very simple to train and deploy machine learning applications. You can build applications like these very easily. All you need is some training data! </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    </div>-->
+
+    <!--    <div class="pt-13 pt-lg-24 pb-lg-24 bg-default-4">-->
+    <div class="container" style="margin-top: 48px">
+      <!--        <div class="row justify-content-center">-->
+      <!--          <div class="col-lg-9 col-xl-8">-->
+      <!--            <div class="section-title text-center px-md-12 mb-lg-17 mb-10">-->
+      <!--              <h2 class="gr-text-3 mb-7 mb-lg-8">Meet our team</h2>-->
+      <!--              <p class="gr-text-8 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <div class="row justify-content-left mb-lg-n15 mb-0">
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/28.png" alt="" class="w-100">
+            </div>
+           <!--  <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Joe Bridges</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Founder</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/29.png" alt="" class="w-100">
+            </div>
+           <!--  <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Jeffrey Walters</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Cheif Executive Officer</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/30.png" alt="" class="w-100">
+            </div>
+          <!--   <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Jason Reed</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Chief Technology Officer</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/31.png" alt="" class="w-100">
+            </div>
+           <!--  <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Nellie Padilla</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Creative Director</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/32.png" alt="" class="w-100">
+            </div>
+           <!--  <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Dean Bell</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Lead Programmer</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/33.png" alt="" class="w-100">
+            </div>
+            <!-- <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Pearl Brooks</h3>
+              <p class="gr-text-9 mb-0 line-height-1">Digital Marketer</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/34.png" alt="" class="w-100">
+            </div>
+            <!-- <div class="card-text pt-9">
+              <h3 class="gr-text-7 mb-2">Isaiah Griffin</h3>
+              <p class="gr-text-9 mb-0 line-height-1">UX Designer</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-13 d-flex align-items-center">
+          <div class="mt-xs-n25">
+            <h3 class="gr-text-6">Looks fun?</h3>
+            <a href="#join-beta" class="btn-link with-icon gr-text-blue gr-text-7 font-weight-bold mt-5">Join beta<i class="icon icon-tail-right font-weight-bold"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section pt-13 pt-lg-28 pb-15 pb-lg-29 bg-default-1 dark-mode-texts">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-10 col-lg-6 col-xl-5">
+          <div class="section-title content-text mb-13 mb-lg-16">
+            <h2 class="title gr-text-3 mb-6">Liner is completely free to use!</h2>
+            <p class="gr-text-8">Liner is a free and easy to use tool which runs on both Windows and Mac.</p>
+          </div>
+          <div class="content-widget">
+            <div class="row">
+              <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                <div class="single-widget media mb-9 mb-lg-12">
+                  <div class="widget-icon circle-30 bg-green mr-7">
+                    <i class="icon icon-check-2-2 text-white"></i>
+                  </div>
+                  <div class="widget-text">
+                    <h3 class="w-title gr-text-7">Data Privacy</h3>
+                    <p class="gr-text-9 mb-0">Your data is always protected and never leaves your computer. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="1100" data-aos-once="true">
+                <div class="single-widget media mb-9 mb-lg-0">
+                  <div class="widget-icon circle-30 bg-green mr-7">
+                    <i class="icon icon-check-2-2 text-white"></i>
+                  </div>
+                  <div class="widget-text">
+                    <h3 class="w-title gr-text-7">Community Support</h3>
+                    <p class="gr-text-9 mb-0">Want new featues? Let us know and we would love to help you.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ Accordion -->
+        <div class="col-md-10 col-lg-6 col-xl-6 offset-xl-1 mt-9 mt-lg-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+          <!-- FAQ Accordion -->
+          <div class="accordion pl-9 pr-8 rounded-10 bg-white border-green border-top-5" id="accordionExample">
+            <div class="border-bottom overflow-hidden">
+              <div class="mb-0 border-bottom-0" id="heading1">
+                <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  Where does the training happen?
+                </button>
+              </div>
+              <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                  Training happens locally on your computer. Nothing is sent to the cloud.
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom overflow-hidden">
+              <div class="mb-0 border-bottom-0" id="heading2">
+                <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Where do I get the data to train my model?
+                </button>
+              </div>
+              <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample">
+                <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                  You can import your data and label it manually or you could also use our library of datasets.
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom overflow-hidden">
+              <div class="mb-0 border-bottom-0" id="heading3">
+                <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Can I train my models without a GPU?
+                </button>
+              </div>
+              <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample">
+                <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                  You can train your models without a GPU. We have optimized the models for standard CPU training as well.
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom overflow-hidden">
+              <div class="mb-0 border-bottom-0" id="heading4">
+                <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Do I need experience in machine learning?
+                </button>
+              </div>
+              <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample">
+                <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                  No, you don't need experience in machine learning. Liner's interface is very intuitive for beginners.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--   <div class="newsletter-section bg-default-4 pt-13 pb-11 py-lg-25 border-bottom dark-mode-texts bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <div class="section-title text-center mb-11">
+            <div class="circle-78 bg-green text-white gr-text-4 mx-auto mb-11" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h2 class="title gr-text-4 mb-7">Get our latest updates</h2>
+            <p class="px-4 gr-text-8 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11">
+          <div class="subscribe-form mb-8">
+            <form action="./">
+              <div class="form-group position-relative">
+                <input class="form-control gr-text-9 border mb-6 min-height-px-64" type="email" id="email" placeholder="Enter your email">
+                <button class="form-btn btn btn-primary mr-2 gr-abs-md-cr min-height-px-50 w-100 w-md-auto">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="form-bottom excerpt text-center">
+            <p class="gr-text-11 gr-text-color-opacity mb-0">We’ll never share your details with third parties.<br class="d-none d-xs-block">
+              View our Privacy Policy for more info.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="footer-section bg-default-4 py-9  dark-mode-texts">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-logo text-center text-md-left mb-7 mb-md-0">
+            <a href="./">
+              <img src="./image/logo2_final_white.svg" width="120px" alt="" class="light-version-logo mx-auto mx-md-0">
+              <img src="./image/logo2_final_white.svg"  width="120px"alt="" class="dark-version-logo mx-auto mx-md-0">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8 offset-lg-1 col-md-8">
+          <ul class="footer-links gr-text-11 py-lg-7 list-unstyled mb-0 d-xs-flex align-items-center justify-content-around justify-content-md-end flex-wrap">
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Privacy Policy</a></li> -->
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Terms & Conditions</a></li> -->
+            <li class="ml-md-12 text-center"><a href="support.html" class="gr-text-color gr-hover-text-blue font-weight-bold ">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Vendor Scripts -->
+<script src="js/vendor.min.js"></script>
+<!-- Plugin's Scripts -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+<script src="plugins/aos/aos.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/date-picker/js/gijgo.min.js"></script>
+<script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+<script src="plugins/counter-up/jquery.counterup.min.js"></script>
+<!-- <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+ --><!-- Activation Script -->
+<script src="js/custom.js"></script>
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 
 </body>
+
 </html>
