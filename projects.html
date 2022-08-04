@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197015193-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-197015193-1');
+  </script>
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Liner.ai - Machine Learning without Code</title>
+
+
+
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." name="description" />
+<meta content="Liner.ai - Machine Learning without Code" property="og:title" />
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." property="og:description" />
+<meta content="https://liner.ai/image/banner.jpg" property="og:image" />
+<meta content="Liner.ai - Machine Learning without Code" property="twitter:title" />
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." property="twitter:description" />
+<meta content="https://liner.ai/image/banner.jpg" property="twitter:image" />
+<meta property="og:type" content="website" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- Bootstrap , fonts & icons  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="fonts/icon-font/css/style.css">
+<link rel="stylesheet" href="fonts/typography-font/typo.css">
+<link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+<!-- Plugin'stylesheets  -->
+<link rel="stylesheet" href="plugins/aos/aos.min.css">
+<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+<link rel="stylesheet" href="plugins/slick/slick.min.css">
+<link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+<!-- Vendor stylesheets  -->
+<!--   <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
+-->  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="./css/theme-mode-custom.css">
+<!-- Custom stylesheet -->
+
+
+<style>
+
+
+@media (max-width: 576px) {
+  .hide-sm{
+    display: none;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .show-sm{
+    display: none;
+  }
+  
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+<div class="site-wrapper overflow-hidden">
+  <!-- Header Area -->
+
+  
+  <header class="site-header site-header--menu-center site-header--fixed fixed-top " style="  background-color: rgba(255, 255, 255, 0.95) !important;"> <!-- dark-mode-texts -->
+      <div class="container-fluid pr-lg-9 pl-lg-9">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0"   >
+          <!-- Brand Logo-->
+          <div class="brand-logo"><a href="/">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo2.svg" style="height: 35px;" alt="" class="light-version-logo ">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo2.svg" style="height: 35px;" alt="" class="dark-version-logo">
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                
+                 <li class="nav-item">
+                  <a class="nav-link" href="/" role="button" aria-expanded="false">Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="projects" role="button" aria-expanded="false">Examples</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="datasets" role="button" aria-expanded="false">Datasets</a>
+                </li>
+
+                
+
+                <li class="nav-item">
+                  <a class="nav-link" href="tutorial" role="button" aria-expanded="false">Tutorial</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="documentation" role="button" aria-expanded="false">Documentation</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact" role="button" aria-expanded="false">Contact</a>
+                </li>
+
+
+              </ul>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block" >
+            <a class="btn btn-primary btn-sm " href="download" style="background-color: #3D7BFA; border:none">
+              Download
+            </a>
+          </div>
+
+
+
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+
+
+
+  <!-- The examples section -->
+  <div class="content-section bg-default-2 pt-25 pb-25 pb-lg-25">
+
+
+
+    <div class="container" style="margin-top: 48px">
+
+      <div class="section-title text-center mb-13 mb-lg-23">
+          <h1 class="title gr-text-3">Example Projects</h1>
+          <br>
+          <p>Liner makes it very simple to train and deploy machine learning applications. You can build applications like these very easily. All you need is some training data!  </p>
+      </div>
+
+
+     
+
+      <div class="row justify-content-left mb-lg-n15 mb-0">
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/411.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/401.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/423.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/421.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/43.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/29.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/38.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/36.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/28.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/40.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/30.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/41.png" alt="" class="w-100">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/32.png" alt="" class="w-100">
+            </div>
+          
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/33.png" alt="" class="w-100">
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-15 mb-13">
+          <div class="team-card">
+            <div class="card-image">
+              <img src="./image/app_examples/34.png" alt="" class="w-100">
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 mb-13 d-flex align-items-center">
+          <div class="mt-xs-n25">
+            <h3 class="gr-text-6">Looks fun?</h3>
+            <a href=download class="btn-link with-icon gr-text-blue gr-text-7 font-weight-bold mt-5">Download now!<i class="icon icon-tail-right font-weight-bold"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The examples section END -->
+
+
+
+ 
+
+  
+    <!-- the downlaods  section -->
+  <div id="download" class="content-section pt-13 pt-lg-19 pb-13 pb-lg-19 bg-default-1">
+    <div class="container w-100">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <div class="section-title text-center mb-6 mb-lg-6">
+            <h2 class="title gr-text-4">Download Liner</h2>
+            <br>
+            <p>Liner is available for both Windows and Mac.   </p>
+            <br>
+            <center>
+
+              <div class="dropdown">
+                <button style="background-color: #3D7BFA; border:none" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Download
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-intel.dmg" >macOS (Intel)</a>
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-arm64.dmg">macOS (Apple Silicon)</a>
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-windows.exe">Windows</a>
+                </div>
+              </div>
+
+
+            </center>
+
+
+          </div>
+
+        </div>
+
+      </div>
+ 
+
+    </div>
+  </div>
+   <!-- the downlaods  section END -->
+  
+  <div class="footer-section bg-default-4 py-9  dark-mode-texts">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-logo text-center text-md-left mb-7 mb-md-0">
+            <a href="./">
+              <img src="./image/logo2_final_white.svg" width="120px" alt="" class="light-version-logo mx-auto mx-md-0">
+              <img src="./image/logo2_final_white.svg"  width="120px"alt="" class="dark-version-logo mx-auto mx-md-0">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8 offset-lg-1 col-md-8">
+          <ul class="footer-links gr-text-11 py-lg-7 list-unstyled mb-0 d-xs-flex align-items-center justify-content-around justify-content-md-end flex-wrap">
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Privacy Policy</a></li> -->
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Terms & Conditions</a></li> -->
+            <li class="ml-md-12 text-center"><a href="contact" class="gr-text-color gr-hover-text-blue font-weight-bold ">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+<!-- Vendor Scripts -->
+<script src="js/vendor.min.js"></script>
+<!-- Plugin's Scripts -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+<script src="plugins/aos/aos.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/date-picker/js/gijgo.min.js"></script>
+<script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+<script src="plugins/counter-up/jquery.counterup.min.js"></script>
+<!-- <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+ --><!-- Activation Script -->
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>

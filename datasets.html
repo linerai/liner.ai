@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197015193-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-197015193-1');
+  </script>
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Liner.ai - Machine Learning without Code</title>
+
+
+
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." name="description" />
+<meta content="Liner.ai - Machine Learning without Code" property="og:title" />
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." property="og:description" />
+<meta content="https://liner.ai/image/banner.jpg" property="og:image" />
+<meta content="Liner.ai - Machine Learning without Code" property="twitter:title" />
+<meta content="Liner is a free tool which lets you build and deploy machine learning applications within minutes. No coding or expertise in machine learning required." property="twitter:description" />
+<meta content="https://liner.ai/image/banner.jpg" property="twitter:image" />
+<meta property="og:type" content="website" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- Bootstrap , fonts & icons  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="fonts/icon-font/css/style.css">
+<link rel="stylesheet" href="fonts/typography-font/typo.css">
+<link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+<!-- Plugin'stylesheets  -->
+<link rel="stylesheet" href="plugins/aos/aos.min.css">
+<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+<link rel="stylesheet" href="plugins/slick/slick.min.css">
+<link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+<!-- Vendor stylesheets  -->
+<!--   <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
+-->  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="./css/theme-mode-custom.css">
+<!-- Custom stylesheet -->
+
+
+<style>
+
+
+@media (max-width: 576px) {
+  .hide-sm{
+    display: none;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .show-sm{
+    display: none;
+  }
+  
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+<div class="site-wrapper overflow-hidden">
+  <!-- Header Area -->
+
+  
+  <header class="site-header site-header--menu-center site-header--fixed fixed-top " style="  background-color: rgba(255, 255, 255, 0.95) !important;"> <!-- dark-mode-texts -->
+      <div class="container-fluid pr-lg-9 pl-lg-9">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0"   >
+          <!-- Brand Logo-->
+          <div class="brand-logo"><a href="/">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo2.svg" style="height: 35px;" alt="" class="light-version-logo ">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo2.svg" style="height: 35px;" alt="" class="dark-version-logo">
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                
+                 <li class="nav-item">
+                  <a class="nav-link" href="/" role="button" aria-expanded="false">Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="projects" role="button" aria-expanded="false">Examples</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="datasets" role="button" aria-expanded="false">Datasets</a>
+                </li>
+
+                
+
+                <li class="nav-item">
+                  <a class="nav-link" href="tutorial" role="button" aria-expanded="false">Tutorial</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="documentation" role="button" aria-expanded="false">Documentation</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact" role="button" aria-expanded="false">Contact</a>
+                </li>
+
+
+              </ul>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block" >
+            <a class="btn btn-primary btn-sm " href="download" style="background-color: #3D7BFA; border:none">
+              Download
+            </a>
+          </div>
+
+
+
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+
+
+  <!-- The examples section -->
+  <div class="content-section  pt-25 pb-25 pb-lg-25  bg-default-2">
+
+
+
+    <div class="container" style="margin-top: 48px">
+
+      <div class="section-title text-center mb-13 mb-lg-23">
+          <h1 class="title gr-text-3">Public Datasets</h1>
+          <br>
+          <p>Download free to use datasets to train your machine learning model. </p>
+      </div>
+
+
+      <!--  <div class="section-title text-center mb-10 mb-lg-10">
+          <h2 class="title gr-text-4">Image Classification</h2>        
+      </div> -->
+
+      <div class="row justify-content-left mb-lg-15 mb-15">
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/550917/1003830/17ad9700150b430e70ce66e691f36a9c/dataset-cover.jpeg?t=2020-03-13-23-12-58" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Dogs vs Cats</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify dogs from cats</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/divamgupta/datasets/releases/download/dogs_vs_cats/dogs_vs_cats.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.microsoft.com/en-us/download/details.aspx?id=54765" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/10449/14658/eef473f4b4bd9a877002467fe258103c/dataset-cover.jpg?t=2018-01-22-17-39-58" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Monkey Species</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify 10 monkey species</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/image_classification/monkey_classification.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/slothkong/10-monkey-species" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://www.researchgate.net/publication/345039740/figure/fig3/AS:1083904253526077@1635434320620/Oxford-102-Flower-dataset-with-annotation-which-contains-102-categories-of-flowers-can.jpg" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Flowers Dataset</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify flower species</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/image_classification/flowers_dataset_mini.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.robots.ox.ac.uk/~vgg/data/flowers/102/" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/1249230/2083498/a7c9222f5443f83f7d31d7e93bbaa1a5/dataset-cover.jpg?t=2021-04-03-15-05-19" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Yoga Dataset</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify yoga poses</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/image_classification/yoga_classification.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/shrutisaxena/yoga-pose-image-classification-dataset" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/635428/1129518/519a6b78395462cd0199a4ae94701c5d/dataset-cover.jpg?t=2020-05-05-12-12-36" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">CamVid Dataset</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Driving semantic segmentation</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/semantic_segmentation/camvid_dataset_train.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/667889/1176415/8588fcaf4598207e755d826ce2aa3d9f/dataset-cover.jpg?t=2020-05-22-07-33-13" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Mask Detection</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Detect a face wearing mask</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/object_detection/mask_detection.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/andrewmvd/face-mask-detection" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/686454/1203932/8b216fcd5f420f2227703cc750a3096c/dataset-cover.jpg?t=2020-06-01-03-39-36" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Car License Plate</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Detect car license plate</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/object_detection/car_plate_detection.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/andrewmvd/car-plate-detection" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/671172/1181356/ff81ce1445cbda6d2948df4af7109708/dataset-cover.jpg?t=2020-05-24-01-55-46" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Road Sign Detection</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Detect road signs</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/object_detection/road_sign_detection.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/andrewmvd/road-sign-detection" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/702771/1228192/41a7f43f0ddc4bf5888393a7f50592ae/dataset-cover.jpg?t=2020-06-09-07-41-15" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Pothole Detection</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Detect potholes</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/object_detection/pothole_detection.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/andrewmvd/pothole-detection" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-55.png-1962508/dataset-cover.png" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">ATIS Flights</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Text intent classification</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/text_classification/atis_flights.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/hassanamin/atis-airlinetravelinformationsystem" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/107582/256559/14accfe0345e7cd534eaff2a9658a4cf/dataset-cover.png?t=2019-01-19-17-16-51" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Rock Paper Scissors</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify hand gestures</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/hand_classification/rock_paper_scissors.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://laurencemoroney.com/datasets.html" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/1074867/1809273/9edc45485dccaccc6d9d3d6226b69f40/dataset-cover.jpg?t=2021-01-03-13-52-54" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Hand gestures</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify hand gestures</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/hand_classification/gestures_4.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/grassknoted/asl-alphabet" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/1377795/2286616/4f743a70cafb453eb03406a56ec13aae/dataset-cover.jpg?t=2021-05-30-16-43-55" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Sports Videos</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify sports videos</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/video_classification/baseball_basketball2.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.crcv.ucf.edu/data/UCF101.php" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+          
+            <div class="col-lg-3 col-md-4 col-xs-6 mb-lg-1 mb-1 p-2 " >
+              <div class="team-card rounded-10 border " style="background-color: white;  ">
+                <div class="card-image ">
+                  <img style="height:300px; object-fit: cover" src="https://storage.googleapis.com/kaggle-datasets-images/550917/1003830/17ad9700150b430e70ce66e691f36a9c/dataset-cover.jpeg?t=2020-03-13-23-12-58" alt="" class="w-100 rounded-10">
+                </div>
+
+                <div class="card-text p-7 pt-9">
+                  <h3 class="gr-text-7 mb-2">Audio Cats and Dogs</h3>
+                  <p  class="gr-text-10 mb-2 line-height-1">Classify animal sounds</p>
+                  <a target="_blank" rel="nofollow" href="https://github.com/linerai/datasets/releases/download/audio_classification/dogs_vs_cats_sounds.zip" class="gr-text-9 mb-0 line-height-1">Download <i class="icon icon-tail-right font-weight-bold" style="margin-right: 10px;"></i></a>
+                  <a target="_blank" rel="nofollow" href="https://www.kaggle.com/datasets/mmoreaux/audio-cats-and-dogs" class="gr-text-9 mb-0 line-height-1">Source <i class="icon icon-tail-right font-weight-bold"></i></a>
+                 
+                </div> 
+
+              </div>
+            </div>
+
+        
+
+      </div>
+
+      <div class="text-center  ">
+          <p>License information / usage rights can be found at the sources of the datasets </p>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- The examples section END -->
+
+
+
+ 
+
+    <!-- the downlaods  section -->
+  <div id="download" class="content-section pt-13 pt-lg-19 pb-13 pb-lg-19 bg-default-1">
+    <div class="container w-100">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <div class="section-title text-center mb-6 mb-lg-6">
+            <h2 class="title gr-text-4">Download Liner</h2>
+            <br>
+            <p>Liner is available for both Windows and Mac.   </p>
+            <br>
+            <center>
+
+              <div class="dropdown">
+                <button style="background-color: #3D7BFA; border:none" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Download
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-intel.dmg" >macOS (Intel)</a>
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-arm64.dmg">macOS (Apple Silicon)</a>
+                  <a class="dropdown-item" href="https://github.com/linerai/releases/releases/download/0.2.0/Liner-0.2.0.0004-windows.exe">Windows</a>
+                </div>
+              </div>
+
+
+            </center>
+
+
+          </div>
+
+        </div>
+
+      </div>
+ 
+
+    </div>
+  </div>
+   <!-- the downlaods  section END -->
+
+
+
+
+
+  
+  <div class="footer-section bg-default-4 py-9  dark-mode-texts">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-logo text-center text-md-left mb-7 mb-md-0">
+            <a href="./">
+              <img src="./image/logo2_final_white.svg" width="120px" alt="" class="light-version-logo mx-auto mx-md-0">
+              <img src="./image/logo2_final_white.svg"  width="120px"alt="" class="dark-version-logo mx-auto mx-md-0">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8 offset-lg-1 col-md-8">
+          <ul class="footer-links gr-text-11 py-lg-7 list-unstyled mb-0 d-xs-flex align-items-center justify-content-around justify-content-md-end flex-wrap">
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Privacy Policy</a></li> -->
+            <!-- <li class="ml-md-12 text-center"><a href="" class="gr-text-color gr-hover-text-blue font-weight-bold ">Terms & Conditions</a></li> -->
+            <li class="ml-md-12 text-center"><a href="contact" class="gr-text-color gr-hover-text-blue font-weight-bold ">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Vendor Scripts -->
+<script src="js/vendor.min.js"></script>
+<!-- Plugin's Scripts -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+<script src="plugins/aos/aos.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/date-picker/js/gijgo.min.js"></script>
+<script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+<script src="plugins/counter-up/jquery.counterup.min.js"></script>
+<!-- <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+ --><!-- Activation Script -->
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>
